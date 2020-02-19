@@ -1,0 +1,86 @@
+.header-container {
+    position: sticky;
+    top: 0px;
+    z-index: 10000000;
+    background-color: white;
+    padding-top: 0.6em;
+}
+
+
+.btn-default {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.link-logo img {
+    max-width: 119px;
+}
+.fulltext-search-box{
+    color: black !important;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important; 
+    border-bottom: 1px solid #949494 !important;
+    border-radius: 0px !important;
+    outline-style:none;
+    box-shadow:none;
+
+}
+.btn-buscar {
+    background-image: url(/arquivos/LUPA2.png) !important;
+    background-repeat: no-repeat !important;
+    color: transparent !important;
+    border-color: transparent !important;
+    outline-style: none;
+    box-shadow: none;
+    border: none;
+    background-color: white !important;
+    max-width: 15px;
+    background-position: center;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    border-bottom: 1px solid #949494 !important;
+    background-size: contain;
+    border-radius: 0px !important;
+    margin-left: -2.5%;
+}
+
+.header .search {
+    text-align: right;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.header .sing-in a {
+    padding: 0 12px !important;
+}
+
+.dropdown-menu {
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+}
+
+.header .sing-in a {
+    font-size: 10px;
+}
+
+#drop-login {
+    margin-left: -42px;
+    margin-top: 10px;
+}
+
+#mini-cart-admake {
+    width: 386px !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+@media screen and (min-width: 1200px) {
+    #headerrow {
+        display: flex;
+        align-items: center;
+    }
+}
