@@ -1,0 +1,105 @@
+<!-- 
+ *
+ * Desenvolvido por Integrando.se
+ * hello@integrando.se
+ * 
+ * Bootstrap v.3
+ *
+ -->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <title> Home</title>
+    <vtex:metaTags />
+    <vtex:template id="commonStyles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body id="home-page">
+
+    <div class="page">
+
+        <vtex:template id="Header" />
+
+        <!--  SubTemplate: Header -->
+
+        <!-- /SubTemplate: Header -->
+        <section class="container-fluid">
+            <div class="fullbanner">
+                <vtex:contentPlaceHolder id="bannersegmentado" />
+            </div><!-- .fullbanner -->
+        </section>
+        <div id="home-extra-top"></div>
+
+        <section id="home-content" class="container">
+
+            <div id="category-extra-middle"></div>
+
+
+
+            <div id="category-extra-vitrine-1"></div>
+
+            <div class="showcase-default showcase-owl">
+                <vtex:contentPlaceHolder id="Destaques" />
+            </div>
+
+            <div id="category-extra-vitrine-2"></div>
+
+            <!-- <div class="showcase-default showcase-owl">
+                 <vtex:contentPlaceHolder id="Lançamentos" />
+             </div> -->
+
+            <div class="showcase-default showcase-owl">
+                <vtex:contentPlaceHolder id="jeans" />
+            </div>
+
+            <div class="row smaller-row">
+                <a href=""><img src="/arquivos/banner-entre-vitrine.png" /></a>
+            </div>
+            <div class="row smaller-row">
+                <a href=""><img src="/arquivos/banner-entre-vitrine-video.png" /></a>
+            </div>
+            <div class="row">
+                <div class="showcase-default showcase-owl">
+                    <vtex:contentPlaceHolder id="bolsas" />
+                </div>
+            </div>
+            <div class="row">
+                    <div class="showcase-default showcase-owl">
+                        <vtex:contentPlaceHolder id="ofertas" />
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="">
+                        <img src="/arquivos/banner-final.png" alt="" />
+                    </a>
+                </div>
+
+                <div class="row text-center" style="margin-top:65px;margin-bottom: 65px">
+                    <h4 class="spacedtitle">INSTAGRAM</h4>
+                    <p style="font-size: 12px;
+                    line-height: 25px;
+                    color: #565656;">SIGA @CARMIMBRASIL</p>
+
+                    <div>
+                        <img src="/arquivos/insta-img.png"/>
+                    </div>
+                </div>
+        </section><!-- #content -->
+
+        <div id="category-extra-bottom"></div>
+
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="Footer" />
+        <!-- /SubTemplate: Footer -->
+
+    </div><!-- .container-fluid -->
+
+</body>
+<vtex:template id="commonScripts" />
+
+</html>
