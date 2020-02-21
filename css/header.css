@@ -3,7 +3,7 @@
     top: 0px;
     z-index: 10000000;
     background-color: white !important;
-    padding-top: 0.6em;
+    padding-top: 8px;
 }
 
 .container-fluid {
@@ -96,9 +96,56 @@ body {
     background-color: #EAECED !important;
 }
 
+.header .button-menu-xs .btn {
+    outline: none;
+}
+
+.header .mini-cart .btn {
+    padding: 0 3px !important;
+}
+
+
+#menu-mobile ul li a {
+    color: #000;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
 @media screen and (min-width: 1200px) {
     #headerrow {
         display: flex;
         align-items: center;
+    }
+    .header-container {
+        padding-bottom: 24px
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .link-logo img {
+        max-width: 90px;
+    }
+
+    .btn-buscar {
+        max-width: 18px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .header .search {
+        text-align: center;
+        margin-bottom: 19px;
+    }
+
+    .header .mini-cart, .header .button-menu-xs {
+        margin-top: 3%;
+    }
+
+    #menu-mobile .header-menu-mobile {
+        margin-top: 8%;
     }
 }

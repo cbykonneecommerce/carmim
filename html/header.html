@@ -18,11 +18,11 @@
              <div class="row" id="headerrow">
  
                  <div class="button-menu-xs col-xs-3 col-sm-1 visible-xs visible-sm">
-                     <button class="btn btn-default btn-open-menu-xs btn-menu-xs" data-id="#menu-mobile"><img src="/arquivos/menu-open.png"></button>
+                     <button class="btn btn-default btn-open-menu-xs btn-menu-xs" data-id="#menu-mobile"><img src="/arquivos/menu-open.png"  style="max-width:25px"/></button>
                      <div id="menu-mobile" style="display: none;">
                          <div class="header-menu-mobile visible-xs">
-                             <span class="close-menu pull-right btn-menu-xs" data-id="#menu-mobile"><i class="fa fa-times"></i></span>
-                             <span class="icone-menu"><img src="/arquivos/menu-open.png"></span>
+                             <span class="close-menu pull-right btn-menu-xs" data-id="#menu-mobile"><img src="/arquivos/vamo.png" style="max-width:14px" /></span>
+                             <span class="icone-menu"><img src="/arquivos/menu-close.png" style="max-width:25px"/></span>
                          </div>
                          <div class="recebe-menu">
                              <!-- RECEBE MENU MOBILE -->
@@ -44,11 +44,15 @@
                  </div>
                  <!-- .logo -->
                  <div class="mini-cart mini-cart-xs text-right col-xs-3 visible-xs">
-                     <a title="Carrinho de Compras" href="/checkout/#/cart" class="btn btn-default">
-                        <img src="/arquivos/BAG2.png" style="max-width: 20px;" />
-                     </a>
+                        <a title="Carrinho de Compras" href="/giftlist" class="btn btn-default">
+                            <img src="/arquivos/CORACAO2.png" style="max-width: 20px"/>
+                         </a>
+                        <a title="Carrinho de Compras" href="/checkout/#/cart" class="btn btn-default">
+                            <img src="/arquivos/BAG2.png" style="max-width: 22px;" />
+                         </a>
+                    
                  </div><!-- .mini-cart-xs -->
-                 <div class="deptos col-xs-12 col-sm-5 col-md-4 col-lg-7">
+                 <div class="deptos col-xs-12 col-sm-5 col-md-4 col-lg-7 hidden-xs">
                     <vtex.cmc:departmentNavigator/>
                 </div><!-- .search -->
                  <div class="search col-xs-12 col-sm-5 col-md-4 col-lg-4">

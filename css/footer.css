@@ -1,4 +1,4 @@
-.footer{
+.footer {
     margin-top: 0px !important;
     padding-top: 20px;
 }
@@ -6,13 +6,15 @@
 .footer, #newsletter {
     background-color: white !important;
 }
-.social-icons li{
+
+.social-icons li {
     margin-right: 21px
 }
-.social-icons li a img{
-    max-height: 14px;
 
+.social-icons li a img {
+    max-height: 14px;
 }
+
 .payments li a img {
     max-width: 280px
 }
@@ -22,13 +24,12 @@
 }
 
 #footercbyk {
-max-width: 45px;
+    max-width: 45px;
 }
 
 #footervtex {
     max-width: 74px;
 }
-
 
 #middle-footer {
     border-top: solid 1px #EEE;
@@ -37,10 +38,10 @@ max-width: 45px;
     padding-bottom: 38px;
 }
 
-.footer-section ul li a{
+.footer-section ul li a {
     font-size: 12px;
     line-height: 25px;
-    color:#565656
+    color: #565656
 }
 
 .footer-title {
@@ -59,7 +60,6 @@ max-width: 45px;
     width: 30%;
     outline: none;
     padding-left: 10px
-
 }
 
 #newsletterwrapper input::placeholder {
@@ -68,7 +68,7 @@ max-width: 45px;
 }
 
 #newsletterwrapper input:focus {
-   background: #EAECED;
+    background: #EAECED;
 }
 
 #emailcatcher {
@@ -79,13 +79,14 @@ max-width: 45px;
     margin-left: 10px;
 }
 
-.spacedtitle{
+.spacedtitle {
     font-size: 15px;
     line-height: 18px;
     font-weight: 400;
     letter-spacing: 5px;
     font-family: 'Lato';
 }
+
 .spacedtitle::after {
     content: '';
     display: block;
@@ -94,11 +95,39 @@ max-width: 45px;
     margin: 16px auto 0;
     background: #000;
 }
-@media (min-width: 1200px)  {
+
+@media (min-width: 1200px) {
     .smaller-row {
         margin-left: 135px !important;
         margin-right: 135px !important;
     }
 }
 
+@media screen and (max-width: 600px) {
+    #newsletterwrapper input {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #emailcatcher {
+        margin-left: 0;
+    }
+    .footer .smaller-row {
+        margin-top: 31px;
+    }
+    .footer-section {
+        margin-top: 29px;
+    }
+    .footer-title {
+        margin-bottom: 15px;
+    }
+    #middle-footer div ul li:first-child {
+        display: block;
+        margin-bottom: 18px;
+        margin-top: 28px;
+    }
 
+    #makers {
+        margin-top: 25px;
+    }
+}
