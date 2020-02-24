@@ -1,0 +1,32 @@
+#institucional-content {
+    margin-top: 2em;
+}
+
+#institucional-content p {
+    line-height: 16px;
+    margin-bottom: 2em;
+}
+
+#institucional-content li {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+#institucional-content li a {
+    color: black;
+}
+
+#institucional-content li span {
+    font-size: 90%;
+    color: black
+}
+
+.store-block {
+    margin-bottom: 3em;
+}
+.store-block p {
+    margin-bottom: 0px !important;
+}
+
+.store-block a {
+    color: black
+}

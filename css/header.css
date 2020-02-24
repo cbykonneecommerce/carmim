@@ -1,3 +1,7 @@
+*{
+    font-family: "Lato";
+}
+
 .header-container {
     position: sticky;
     top: 0px;
@@ -110,6 +114,55 @@ body {
     font-size: 12px;
     line-height: 30px;
     font-weight: 400;
+}
+
+
+.deptos ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.deptos ul li a{
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 4px;
+    color: #000;
+    text-decoration: none;
+}
+
+.deptos ul li a:hover {
+    border-bottom: solid 1px #DA240A;
+    transition: all 0.2s ease;
+}
+
+
+
+.deptonav {
+  
+    background-color: #FCFCFC;
+    /*opacity: 0.92;*/
+    z-index: 9999999999;
+    padding-top: 2em;
+    padding-left: 2em;
+    position: absolute;
+    width: 100%;
+
+    
+}
+
+#deptos-list a {
+    color: black !important;
+    font-size: 10px;
+}
+
+#deptos-list ul li {
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
