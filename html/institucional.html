@@ -1,11 +1,4 @@
-<!-- 
- *
- * Desenvolvido por Integrando.se
- * hello@integrando.se
- * 
- * Bootstrap v.3
- *
- -->
+
 
  <!DOCTYPE html>
  <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
@@ -32,12 +25,20 @@
          <section id="institucional-content" class="container">
  
             <div class="row">
-                <div class="col-xs-2 hidden-xs">
+
+
+                <div id="sidenavCTR" style="position: fixed;top: 50%;z-index: 99;background: #b3b3b3;
+                opacity: .8;">
+                    <a  onclick="openNav()" id="open"><img src="/arquivos/seta02.png"/></a>
+                    <a  onclick="closeNav()" id="close"><img src="/arquivos/seta01.png"/></a>
+                </div>
+
+                <div id="mySidenav" class="col-sm-7 hidden-md hidden-lg">
                     <h4><b>Antes da Compra</b></h4>
                     <ul>
                         <li><a href="/institucional/compra-segura">Compra Segura</a></li>
                         <li><a href="/institucional/privacidade">Política de Privacidade</a></li>
-                        <li><a href="">Televendas <br/><vtex.cmc:telefone /></a></li>
+                        <li><a href="tel:1134567890">Televendas <br/><vtex.cmc:telefone /></a></li>
                     </ul>
 
                     <h4><b>Comprando</b></h4>
@@ -47,38 +48,70 @@
 
                     <h4><b>Após a Compra</b></h4>
                     <ul>
-                        <li><a href="/institucional/acompanhe-seu-pedido">Acompanhe Seu Pedido</a></li>
+                        <li><a href="/account/orders">Acompanhe Seu Pedido</a></li>
                         <li><a href="/institucional/entrega">Prazo de Entrega</a></li>
                         <li><a href="/institucional/trocas-devolucoes">Trocas e Devoluções</a></li>
                     </ul>
 
                     <h4><b>Institucional</b></h4>
                     <ul>
-                        <li><a href="/institucional/fale-conosco">Fale Conosco <br/> <span>Envie-nos um email de contato, com suas sugesôes e críticas.</span></a></li>
+                        <li><a href="/institucional/fale-conosco">Fale Conosco</a><br/><br/>
+                            <span>Envie-nos um email de contato, com suas sugesôes e críticas.</span>
+                        </li>
+                        <li><a href="/institucional/quem-somos">Quem Somos</a></li>
+                        <li><a href="/institucional/nossas-lojas">Nossas Lojas</a></li>
+                    </ul>
+                </div>
+
+                <script>
+                    $("#sidenavCTR #close").hide();
+
+                    function openNav() {
+                        document.getElementById("mySidenav").style.left = "0px";
+                        document.getElementById("sidenavCTR").style.left = "64%";
+                        $("#sidenavCTR #open").hide();
+                        $("#sidenavCTR #close").show();
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.left = "-880px";
+                        document.getElementById("sidenavCTR").style.left = "0%";
+                        $("#sidenavCTR #close").hide();
+                        $("#sidenavCTR #open").show();
+                    }
+                </script>
+               <div class="col-xs-2 hidden-xs">
+                    <h4><b>Antes da Compra</b></h4>
+                    <ul>
+                        <li><a href="/institucional/compra-segura">Compra Segura</a></li>
+                        <li><a href="/institucional/privacidade">Política de Privacidade</a></li>
+                        <li><a href="tel:1134567890">Televendas <br/><vtex.cmc:telefone /></a></li>
+                    </ul>
+
+                    <h4><b>Comprando</b></h4>
+                    <ul>
+                        <li><a href="/institucional/pagamento">Formas de pagamento</a></li>
+                    </ul>
+
+                    <h4><b>Após a Compra</b></h4>
+                    <ul>
+                        <li><a href="/account/orders">Acompanhe Seu Pedido</a></li>
+                        <li><a href="/institucional/entrega">Prazo de Entrega</a></li>
+                        <li><a href="/institucional/trocas-devolucoes">Trocas e Devoluções</a></li>
+                    </ul>
+
+                    <h4><b>Institucional</b></h4>
+                    <ul>
+                        <li><a href="/institucional/fale-conosco">Fale Conosco</a><br/><br/>
+                            <span>Envie-nos um email de contato, com suas sugesôes e críticas.</span>
+                        </li>
                         <li><a href="/institucional/quem-somos">Quem Somos</a></li>
                         <li><a href="/institucional/nossas-lojas">Nossas Lojas</a></li>
                     </ul>
                 </div>
                 <div class="col-md-10">
-                    <h2>CENTRAL DE ATENDIMENTO</h2>
-
-                    <h3 style="text-align:center">Política de Privacidade</h3>
-
-                    <h4><b>PRIVACIDADE</b></h4>
-                 
-                    <p>
-                        A política de privacidade tem como objetivo deixar claro o compromisso da Carmim Online Store em garantir a proteção dos dados solicitados em nossa loja.
-                    </p>
-                    <p>
-                        - As informações do seu cadastro são armazenadas em ambiente seguro e de acesso exclusivo da Carmim Online Store. 
-                    </p>
-                    <p>
-                        - As transações com cartões de crédito são feitas diretamente com os servidores das administradoras das mesmas garantindo total segurança em suas compras
-                    </p>
-                    <p>
-                        - Seus dados cadastrais não serão divulgados para terceiros, mantendo ao máximo a sua privacidade.
-                    </p>
-
+                    <h4 style="text-align:center">CENTRAL DE ATENDIMENTO</h4>
+                    <vtex:contentPlaceHolder id="conteudo" />
                 </div>
             </div>
  

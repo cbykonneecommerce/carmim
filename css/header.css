@@ -1,6 +1,13 @@
 *{
     font-family: "Lato";
 }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    border: none !important;
+    background: none !important;
+}
+.ui-autocomplete {
+    z-index: 9999999999 !important;
+}
 
 .header-container {
     position: sticky;
@@ -8,6 +15,12 @@
     z-index: 10000000;
     background-color: white !important;
     padding-top: 8px;
+}
+
+#top-menu {
+    position: sticky;
+    top: 10%;
+    z-index: 10000000;
 }
 
 .container-fluid {
@@ -164,6 +177,8 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+
 
 @media screen and (min-width: 1200px) {
     #headerrow {
