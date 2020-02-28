@@ -1,0 +1,229 @@
+.notifyme.sku-notifyme {
+    text-align: center;
+}
+
+.notifymetitle.notifyme-title {
+    color: #C52828;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.sku-notifyme-form.notifyme-form input {
+    background-color: #EAECED;
+    height: 38px;
+    border-radius: 0px;
+    border-color: white;
+    font-size: 12px;
+    color: black;
+    font-family: "Lato";
+    display: block;
+    outline: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sku-notifyme-form.notifyme-form input.btn-ok {
+    color: white;
+    background-color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+.product-details .avaliacoes , .product-name{
+    text-align: center !important;
+}
+.codprod span, .codprod .skuReference  {
+    display: inline-block
+}
+
+.codprod {
+    color: #8C8C8C;
+    font-size: 10px;
+}
+
+.product-details .price-box {
+    border-bottom: none !important;
+}
+
+.product-details .product-name .productName {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    
+}
+
+
+.product-details .product-name {
+    margin-top: 33%;
+    margin-bottom: 0;
+}
+
+
+
+.dropbuttom .dropdown-btn {
+    width: 100%;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    color: black;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+    outline: none !important;
+    background-color: white;
+    border-top: solid 1px #E9E9E9;
+}
+
+.dropbuttom button i {
+    color: black;
+    padding-right: 19px;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+}
+
+.dropbuttom #suporte i {
+    padding-left: 10em;
+}
+
+.dropdown-container#institucional, .dropdown-container#suporte {
+    background-color: white;
+    padding: 8px;
+}
+
+.dropdown-container#institucional a, .dropdown-container#suporte a {
+    display: block !important;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+
+
+.zoomPad {
+    position: relative;
+    float: left;
+    z-index: 99;
+    cursor: crosshair
+}
+
+.zoomPreload {
+    -moz-opacity: .8;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    color: #333;
+    font-size: 12px;
+    font-family: Tahoma;
+    text-decoration: none;
+    border: 1px solid #CCC;
+    background-color: #fff;
+    padding: 8px;
+    text-align: center;
+    background-image: url(/arquivos/ajax-loader.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 110;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.zoomPup {
+    overflow: hidden;
+    background-color: #FFF;
+    -moz-opacity: .6;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    z-index: 120;
+    position: absolute;
+    border: 1px solid #CCC;
+    z-index: 101;
+    cursor: crosshair
+}
+
+.zoomOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FFF;
+    z-index: 5000;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 101
+}
+
+.zoomWindow {
+    position: absolute;
+    left: 445px !important;
+    top: 40px;
+    background: #FFF;
+    z-index: 6000;
+    height: auto;
+    z-index: 10000;
+    z-index: 110;
+}
+
+.zoomWrapper {
+    position: relative;
+    border: 1px solid #999;
+    z-index: 110;
+    width: 531px !important;
+    height: 400px !important;
+}
+
+.zoomWrapperTitle {
+    display: block;
+    background: #999;
+    color: #FFF;
+    height: 18px;
+    line-height: 18px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 120;
+    -moz-opacity: .6;
+    opacity: .6;
+    filter: alpha(opacity=60)
+}
+
+.zoomWrapperImage {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 110;
+    height: 400px !important;
+}
+
+.zoomWrapperImage img {
+    border: 0;
+    display: block;
+    position: absolute;
+    z-index: 101
+}
+
+.zoomIframe {
+    z-index: -1;
+    filter: alpha(opacity=0);
+    -moz-opacity: .8;
+    opacity: .8;
+    position: absolute;
+    display: block
+}
+
+
+
+
+@media screen and (min-width: 1100px) {
+    .product-image .apresentacao {
+        margin-left: 15%
+    }
+}

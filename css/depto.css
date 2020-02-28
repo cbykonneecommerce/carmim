@@ -1,0 +1,48 @@
+.titulo-sessao {
+    display: none;
+}
+
+.pages .pgCurrent {
+    background-color: black !important;
+}
+
+.resultado-busca-filtro .compare {
+    display: none;
+}
+
+.pages li.first, .pages li.last {
+    display: none;
+}
+
+.title-category {
+    display: none !important;
+}
+
+.bread-crumb {
+    margin-top: 35px;
+}
+
+.depto-text p {
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+
+}
+
+.pages li.pgEmpty {
+    background-color: transparent;
+    color: black;
+
+}
+
+.pages li {
+    border: none !important;
+    background-color: transparent;
+}
+
+
+@media screen and (max-width: 1900px) {
+    .box-banner a img {
+        height: 100%;
+    }
+}
