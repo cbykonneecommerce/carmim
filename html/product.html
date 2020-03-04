@@ -81,7 +81,10 @@
                         <!-- <vtex.cmc:OtherPaymentMethod/> -->
                     </div><!-- .price-box -->
 
-                    <vtex.cmc:stockKeepingUnitService/>
+                   <!--<vtex.cmc:stockKeepingUnitService/>--> 
+
+                    <div style="margin-top: 2em;"><vtex.cmc:GiftListInsertSkuV2  /></div>
+
                  </div>
  
                  <div class="product-image col-xs-12 col-sm-7 col-lg-6 text-center">
@@ -136,7 +139,7 @@
                         <vtex.cmc:skuSelection />
                      </div><!-- .seletor-sku -->
  
-                     <div class="buy-button-box hidden-xs">
+                     <div class="buy-button-box">
                          <vtex.cmc:BuyButton />
                      </div><!-- .buy-button-box -->
                      
@@ -262,26 +265,7 @@
          <vtex:template id="Footer" />
          <!-- /SubTemplate: Footer -->
  
-         <div id="comprar-flutuante" style="display: none;">
-             <div class="container">
-                 <div class="row">
-                     <div class="col-xs-1 visible-lg visible-md">
-                         <img src="/arquivos/sem-foto.gif" alt="" id="foto-comprar-flutuante" class="img-responsive" />
-                     </div>
-                     <div class="col-nome col-xs-3 hidden-xs">
-                         <vtex.cmc:productName/>
-                     </div>
-                     <div class="col-precos col-xs-4 col-lg-5 hidden-xs">
-                         <vtex.cmc:skuPrice/>
-                     </div>
-                     <div class="col-comprar col-xs-12 col-sm-5 col-md-4 col-lg-3">
-                         <div class="buy-button-box">
-                             <vtex.cmc:BuyButton />
-                         </div><!-- .buy-button-box -->
-                     </div>
-                 </div>
-             </div>
-         </div>
+     
      
      </div><!-- .container-fluid -->
  

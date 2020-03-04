@@ -1,24 +1,30 @@
 
-    $(".notifymetitle.notifyme-title").text("Produto indisponível");
-    $(".sku-notifyme-form p").text("Avise-me quando estiver disponível");
-$(".user-review h4").text("AVALIAÇÕES");
+$(".notifymetitle.notifyme-title").text("Produto indisponível");
+$(".sku-notifyme-form p").text("Avise-me quando estiver disponível");
 
 
-    $(".dropdown-container").hide();
-    $(".dropdown-btn#descricao").toggle(() => {
+setTimeout(function () {
+    $(".glis-popup-link.glis-thickbox.tb-added.qvBinded", "body").html(`<img src="/arquivos/CORACAO2.png" style="max-width: 18px"> ADICIONAR A LISTA DE DESEJOS`);
+    $("#TB_closeWindowButton").html(`<img src="/arquivos/menu-close.png" style="max-width:25px"/>`);
+    $(".user-review h4").text("AVALIAÇÕES");
+}, 1000);
 
-$(".dropdown-btn#descricao i").attr('class', 'fa fa-minus');
-$(".dropdown-container#descricao").slideDown()
+
+$(".dropdown-container").hide();
+$(".dropdown-btn#descricao").toggle(() => {
+
+    $(".dropdown-btn#descricao i").attr('class', 'fa fa-minus');
+    $(".dropdown-container#descricao").slideDown()
 }, () => {
-$(".dropdown-container#descricao").slideUp()
-$(".dropdown-btn#descricao i").attr('class', 'fa fa-plus');
+    $(".dropdown-container#descricao").slideUp()
+    $(".dropdown-btn#descricao i").attr('class', 'fa fa-plus');
 })
 
 
 $(".dropdown-btn#especificacao").toggle(() => {
-$(".dropdown-btn#especificacao i").attr('class', 'fa fa-minus');
-$(".dropdown-container#especificacao").slideDown()
+    $(".dropdown-btn#especificacao i").attr('class', 'fa fa-minus');
+    $(".dropdown-container#especificacao").slideDown()
 }, () => {
-$(".dropdown-container#especificacao").slideUp()
-$(".dropdown-btn#especificacao i").attr('class', 'fa fa-plus');
+    $(".dropdown-container#especificacao").slideUp()
+    $(".dropdown-btn#especificacao i").attr('class', 'fa fa-plus');
 })

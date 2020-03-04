@@ -32,7 +32,14 @@
                         <!-- /placeholder -->
                     </div><!-- #departament-banner -->
          </div>
- 
+
+         <div id="sidenavCTR" style="position: fixed;top: 50%;z-index: 99;background: #b3b3b3;
+         opacity: .8;">
+             <a  onclick="openNav()" id="open"><img src="/arquivos/seta02.png"/></a>
+             <a  onclick="closeNav()" id="close"><img src="/arquivos/seta01.png"/></a>
+         </div>
+
+       
          <section id="content" class="container">
  
              <div id="box-bread-brumb">
@@ -46,7 +53,7 @@
             </div>
              <div class="row">
  
-                 <aside class="col-xs-3 hidden-xs hidden-sm sidebar" style="display:none">
+                 <aside class="col-xs-3 col-lg-12 sidebar" id="mySidenav" style="background-color: #FCFCFC;">
                      <div id="departament-navegador">
                          <!--  Controle: navegador de departamento -->
                          <vtex.cmc:singleDepartmentNavigator keepCurrentPath="true" />
@@ -102,4 +109,23 @@
      <vtex:template id="commonScripts" />
 
      <script src="/arquivos/pagination.js"></script>
+     <script src="/arquivos/filters.js"></script>
+     <script>
+
+            $("#sidenavCTR #close").hide();
+   
+            function openNav() {
+                document.getElementById("mySidenav").style.left = "0px";
+                document.getElementById("sidenavCTR").style.left = "64%";
+                $("#sidenavCTR #open").hide();
+                $("#sidenavCTR #close").show();
+            }
+   
+            function closeNav() {
+                document.getElementById("mySidenav").style.left = "-880px";
+                document.getElementById("sidenavCTR").style.left = "0%";
+                $("#sidenavCTR #close").hide();
+                $("#sidenavCTR #open").show();
+            }
+        </script>
  </html>

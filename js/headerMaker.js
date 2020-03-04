@@ -54,11 +54,12 @@ $( document ).ready(function() {
 
            //Mobile
            $(`.dropdown-btn#${element.name}`).toggle(() => {
-            $(".dropdown-container").hide();
+            $(".dropdown-container").slideUp();
+            $(`.dropdown-btn i`).attr('class', 'fa fa-angle-down');
             $(`.dropdown-btn#${element.name} i`).attr('class', 'fa fa-angle-up');
             $(`.dropdown-container#${element.name}`).slideDown()
         }, () => {
-            $(`.dropdown-container#${element.name}`).hide()
+            $(`.dropdown-container#${element.name}`).slideUp()
             $(`.dropdown-btn#${element.name} i`).attr('class', 'fa fa-angle-down');
         })
 
@@ -118,10 +119,10 @@ $( document ).ready(function() {
 
     $("#usuario-cart").hover(()=>{
     
-        $("#usuario-cart a img").attr("src","/arquivos/BAG2preto.png");
+        $("#usuario-cart a.btn-mini-cart img").attr("src","/arquivos/BAG2preto.png");
     }, 
     ()=>{
-        $("#usuario-cart a img").attr("src","/arquivos/BAG2.png");
+        $("#usuario-cart a.btn-mini-cart img").attr("src","/arquivos/BAG2.png");
     })
 
 

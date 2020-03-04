@@ -1,10 +1,12 @@
-*{
+* {
     font-family: "Lato";
 }
+
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
     border: none !important;
     background: none !important;
 }
+
 .ui-autocomplete {
     z-index: 9999999999 !important;
 }
@@ -36,17 +38,18 @@
 .link-logo img {
     max-width: 119px;
 }
-.fulltext-search-box{
+
+.fulltext-search-box {
     color: black !important;
     border-top-color: transparent !important;
     border-left-color: transparent !important;
-    border-right-color: transparent !important; 
+    border-right-color: transparent !important;
     border-bottom: 1px solid #949494 !important;
     border-radius: 0px !important;
-    outline-style:none;
-    box-shadow:none;
-
+    outline-style: none;
+    box-shadow: none;
 }
+
 .btn-buscar {
     background-image: url(/arquivos/LUPA2.png) !important;
     background-repeat: no-repeat !important;
@@ -99,15 +102,13 @@
     border: none !important;
 }
 
-
 #drop-login li {
-    margin:6px;
+    margin: 6px;
 }
 
 #top-menu {
-    margin-bottom: 0px  !important
+    margin-bottom: 0px !important
 }
-
 
 body {
     background-color: #EAECED !important;
@@ -121,14 +122,12 @@ body {
     padding: 0 3px !important;
 }
 
-
 #menu-mobile ul li a {
     color: #000;
-    font-size: 12px;
-    line-height: 30px;
-    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 30px !important;
+    font-weight: 400 !important;
 }
-
 
 .deptos ul {
     display: flex;
@@ -138,7 +137,7 @@ body {
     margin-bottom: 0px;
 }
 
-.deptos ul li a{
+.deptos ul li a {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 1px;
@@ -152,10 +151,7 @@ body {
     transition: all 0.2s ease;
 }
 
-
-
 .deptonav {
-  
     background-color: #FCFCFC;
     /*opacity: 0.92;*/
     z-index: 9999999999;
@@ -163,8 +159,6 @@ body {
     padding-left: 2em;
     position: absolute;
     width: 100%;
-
-    
 }
 
 #deptos-list a {
@@ -178,7 +172,108 @@ body {
     margin-bottom: 10px;
 }
 
+.sidenav {
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
 
+/* Style the sidenav links and the dropdown button */
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 20px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over */
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #000;
+}
+
+/* Add an active class to the active dropdown button */
+
+.active {
+    color: #000;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+
+.dropdown-container {
+    display: none;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+
+.fa-angle-down, .fa-angle-up {
+    float: right;
+    padding-right: 8px;
+}
+
+#mini-cart-admake .mini-cart-item .nome-produto a {
+    text-align: left;
+    font-size: 11px !important;
+    line-height: 13px !important;
+    color: black !important;
+}
+
+#mini-cart-admake .mini-cart-item .qtd-valor {
+    margin-top: 2em;
+    color: black !important
+}
+
+#mini-cart-admake .mini-cart-item .qtd-valor .preco {
+    color: black !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 18px !important
+}
+
+#mini-cart-admake .mini-cart-item {
+    border-bottom: none !important;
+}
+
+#mini-cart-admake .mini-cart-footer .mini-cart-totais {
+    background-color: #F9F9F9;
+    padding: 10px;
+}
+
+#mini-cart-admake #mini-cart-admake-total, #mini-cart-admake .mini-cart-totais span {
+    color: #000000;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    line-height: 18px !important;
+}
+
+#mini-cart-admake {
+    right: -25px !important;
+}
+
+#mini-cart-admake .mini-cart-botao .btn-finalizar-compra {
+    padding: 10px;
+    color: #fff;
+    background-color: #000 !important;
+    font-weight: 200 !important;
+    text-transform: uppercase;
+    font-size: 16px !important;
+    line-height: 26px !important;
+    letter-spacing: 1px;
+    height: 35px !important;
+    border-radius: 0 !important;
+}
 
 @media screen and (min-width: 1200px) {
     #headerrow {
@@ -190,17 +285,13 @@ body {
     }
 }
 
-
-
 @media screen and (max-width: 1200px) {
     .link-logo img {
         max-width: 90px;
     }
-
     .btn-buscar {
         max-width: 18px;
     }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -208,12 +299,15 @@ body {
         text-align: center;
         margin-bottom: 19px;
     }
-
     .header .mini-cart, .header .button-menu-xs {
         margin-top: 3%;
     }
-
     #menu-mobile .header-menu-mobile {
         margin-top: 8%;
+    }
+    #admake-advanced-filter {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
     }
 }
