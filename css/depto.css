@@ -75,7 +75,9 @@
         width: 50% !important;
     }
 
-
+    .pager.bottom {
+        margin-top:100px
+    }
     #mySidenav {
         z-index: 9999999999;
         top: 0;
