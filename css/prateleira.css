@@ -6,6 +6,7 @@
 
 .prateleira .box-item {
     background-color: white !important;
+    height: 27em;
 }
 
 .prateleira .price, .wrapper-buy-button-asynchronous  {
@@ -55,6 +56,8 @@ select, fieldset {
 
 .installment {
     color: #b3bbd1 !important;
+    display: block;
+    margin-top: 1em;
 }
 
 .title-category {

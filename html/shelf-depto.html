@@ -42,15 +42,16 @@
                          $product.BestPrice
                      </span>                    
                  #end
-                 #if ($product.NumbersOfInstallment > 1)
-                     <span class="installment">
-                         ou ${product.NumbersOfInstallment}x de $product.InstallmentValue
-                     </span>
-                 #end
+                
              </a>
          </span>
      $product.BottomBuyAsynchronous
- 
+     #if ($product.NumbersOfInstallment > 1)
+     <span class="installment">
+        ou ${product.NumbersOfInstallment}x de $product.InstallmentValue
+    </span>          
+     #end
+    
      #else
          <span class="out-of-stock">Produto Esgotado</span> 
      #end
