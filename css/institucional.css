@@ -49,6 +49,23 @@
     background-color: white;
 }
 
+
+
+.form-control {
+    height: 38px;
+    border-radius: 0px;
+    border-color: white;
+    font-size: 12px;
+    color: black;
+    font-family: "Lato";
+    outline: none;
+    padding-left: 10px;
+    background-color: #EAECED !important;
+}
+
+
+
+
 @media screen and (min-width: 1100px) {
     #sidenavCTR {
         display: none;
