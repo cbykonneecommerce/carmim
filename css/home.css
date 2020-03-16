@@ -1,3 +1,9 @@
 #home-content {
     background-color: #EAECED
 }
+
+#home-content .owl-carousel .owl-item li{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+

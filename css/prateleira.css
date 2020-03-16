@@ -16,7 +16,7 @@
 
 .prateleira .btn-add-buy-button-asynchronous {
   
-    background-color: #F00 !important;
+    background-color: #C52828  !important;
     font-weight: 400 !important;
     color: #fff;
     padding: 10px;
@@ -28,7 +28,7 @@
 }
 
 .prateleira .price .best-price {
-    color: #F00 !important ;
+    color: #C52828  !important ;
     font-size: 16px !important;
     font-weight: bold !important;
 }
