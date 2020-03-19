@@ -56,7 +56,8 @@
 }
 
 .resultado-busca-filtro {
-    background-color: #FCFCFC;
+    /*background-color: #FCFCFC;*/
+    margin-top: 1em;
 }
 
 

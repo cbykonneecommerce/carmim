@@ -275,6 +275,16 @@ body {
     border-radius: 0 !important;
 }
 
+.flag {
+    background-color: black;
+    color: white;
+    font-family: "Lato";
+    padding: 9px;
+    width: 9em;
+    z-index: 99;
+    left: 9px;
+    position: absolute;
+}
 @media screen and (min-width: 1200px) {
     #headerrow {
         display: flex;

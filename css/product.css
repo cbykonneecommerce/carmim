@@ -432,7 +432,14 @@ label.combination_unavaliable:after {
 }
 
 
+.owl-carousel .owl-item li {
+    margin-left: 1em;
+    margin-right: 1em;
+}
 
+.prateleira.vitrine > ul {
+    margin-left: 0px !important;
+}
 
 .recomendations h2 {
     line-height: 18px;
