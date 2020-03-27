@@ -91,6 +91,10 @@ select, fieldset {
         
         margin-top: 1em;
     }
+    .prateleira .box-item {
+        height: 24em;
+        padding: 6px !important;
+    }
 }
 
 
