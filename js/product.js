@@ -28,3 +28,8 @@ $(".dropdown-btn#especificacao").toggle(() => {
     $(".dropdown-container#especificacao").slideUp()
     $(".dropdown-btn#especificacao i").attr('class', 'fa fa-plus');
 })
+
+
+if($(".bread-crumb").text().includes("CALÇADOS") || $(".bread-crumb").text().includes("BOLSAS") || $(".bread-crumb").text().includes("ACESSÓRIOS")) {
+    $(".tabela-de-medidas").hide()
+}
