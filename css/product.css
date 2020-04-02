@@ -245,7 +245,7 @@ input.qtd.pull-left {
     border-color: #000 !important;
 }
 
-label.combination_unavaliable:after {
+label.item_unavaliable:after {
     content:" X";
     color: #F00;
 }

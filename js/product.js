@@ -33,3 +33,8 @@ $(".dropdown-btn#especificacao").toggle(() => {
 if($(".bread-crumb").text().includes("CALÇADOS") || $(".bread-crumb").text().includes("BOLSAS") || $(".bread-crumb").text().includes("ACESSÓRIOS")) {
     $(".tabela-de-medidas").hide()
 }
+
+/*
+skuJson.skus.forEach(element => {
+    
+});*/
