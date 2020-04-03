@@ -17,24 +17,32 @@ setTimeout(() => {
     let vendedorCode = $("#codigologista").val();
     let codeConfirmation = false;
     console.log(vendedorCode)
+
+    /*
+    fetch("/api/dataentities/CV/search?_fields=codigo&codigo=*26071997*")
+    .then((res) =>{ return res.json()})
+    .then(r=> console.log(r))
+
+    O CÓDIGO ACIMA É O MELHOR PQ ELE CHECA DIRETO SE O VALOR EXISTE OU NAO SEM ITERAR POR TODOS OS REGISTROS
+    */
     let results = await fetch("/api/dataentities/CV/search?_fields=codigo")
       .then(response => {
         return response.json();
       });
     console.log(results);
 
-      for(let i = 0; i < results.length; i++) {
-        if(vendedorCode == results[i].codigo) {
-          codeConfirmation = true;
-          break;
-        }
+    for (let i = 0; i < results.length; i++) {
+      if (vendedorCode == results[i].codigo) {
+        codeConfirmation = true;
+        break;
       }
+    }
 
-      if(codeConfirmation) {
-        $("#codigologista").css({"border-color": "black"});
-        $(".lojista-codigo small").hide()
+    if (codeConfirmation) {
+      $("#codigologista").css({ "border-color": "black" });
+      $(".lojista-codigo small").hide()
 
-        vtexjs.checkout.getOrderForm()
+      vtexjs.checkout.getOrderForm()
         .then(function (orderForm) {
           let marketingData = orderForm.marketingData;
           marketingData.utmSource = vendedorCode;
@@ -43,17 +51,17 @@ setTimeout(() => {
           console.log("Nome alterado!");
           console.log(orderForm.marketingData);
         })
-      } else {
-        $("#codigologista").css({"border-color": "red"});
-        $(".lojista-codigo small").remove()
-        $(".lojista-codigo").append("<small><br/>Digite um código de vendedor valido</small>")
-      }
-
-    
+    } else {
+      $("#codigologista").css({ "border-color": "red" });
+      $(".lojista-codigo small").remove()
+      $(".lojista-codigo").append("<small><br/>Digite um código de vendedor valido</small>")
+    }
 
 
 
-   
+
+
+
 
   })
 
