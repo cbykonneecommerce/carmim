@@ -287,6 +287,16 @@ body {
 }
 
 
+#hiroshimanagazap{
+    width: 4em;
+    position: fixed;
+    top: 85%;
+    right: 3em;
+    z-index: 9999999;
+
+}
+
+
 @media screen and (min-width: 1200px) {
     #headerrow {
         display: flex;

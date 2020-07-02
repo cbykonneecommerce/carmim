@@ -18,24 +18,23 @@ setTimeout(() => {
     let codeConfirmation = false;
     console.log(vendedorCode)
 
-    /*
-    fetch("/api/dataentities/CV/search?_fields=codigo&codigo=*26071997*")
-    .then((res) =>{ return res.json()})
-    .then(r=> console.log(r))
+  
 
-    O CÓDIGO ACIMA É O MELHOR PQ ELE CHECA DIRETO SE O VALOR EXISTE OU NAO SEM ITERAR POR TODOS OS REGISTROS
-    */
-    let results = await fetch("/api/dataentities/CV/search?_fields=codigo")
+    let results = await fetch(`/api/dataentities/CV/search?_fields=codigo&codigo=*${vendedorCode}*`, {
+      method: "GET",
+      headers: {
+        'Content-Type': 'application/json', "Accept": "application/vnd.vtex.ds.v10+json"
+      }
+    })
       .then(response => {
         return response.json();
       });
     console.log(results);
 
-    for (let i = 0; i < results.length; i++) {
-      if (vendedorCode == results[i].codigo) {
-        codeConfirmation = true;
-        break;
-      }
+    if (vendedorCode == results[0].codigo) {
+      codeConfirmation = true;
+      console.log("existe")
+
     }
 
     if (codeConfirmation) {
@@ -44,18 +43,35 @@ setTimeout(() => {
 
       vtexjs.checkout.getOrderForm()
         .then(function (orderForm) {
-          let marketingData = orderForm.marketingData;
+          let marketingData = {}
+
+          if (!orderForm.marketingData) {
+            marketingData = {
+              coupon: null,
+              marketingTags: [],
+              utmCampaign: null,
+              utmMedium: null,
+              utmSource: null,
+              utmiCampaign: null,
+              utmiPart: null,
+              utmipage: null
+            }
+          }
           marketingData.utmSource = vendedorCode;
           return vtexjs.checkout.sendAttachment('marketingData', marketingData)
         }).done(function (orderForm) {
           console.log("Nome alterado!");
           console.log(orderForm.marketingData);
+          $(".lojista-codigo small").remove()
+          $(".lojista-codigo").append("<small><br/>Código valido</small>")
         })
     } else {
       $("#codigologista").css({ "border-color": "red" });
       $(".lojista-codigo small").remove()
-      $(".lojista-codigo").append("<small><br/>Digite um código de vendedor valido</small>")
+      $(".lojista-codigo").append("<small><br/>Digite um código de representante valido</small>")
     }
+
+
 
 
 
