@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    $(".bread-crumb ul li:first-of-type a").text("CARMIM")
+
     $(".pages li.previous", "body").html("<img src='/arquivos/seta-esquerda.png'/>")
     $(".pages li.next", "body").html("<img src='/arquivos/seta-direita.png'/>")
 
@@ -25,6 +28,8 @@ $(window).on('hashchange', function(e){
    $(".pages li.next", "body").html("<img src='/arquivos/seta-direita.png'/>")
 
    setInterval(()=>{
+    $(".bread-crumb ul li:first-of-type a").text("Carmim")
+
     $(".pages li.previous", "body").html("<img src='/arquivos/seta-esquerda.png'/>");
     $(".pages li.next", "body").html("<img src='/arquivos/seta-direita.png'/>");
    }, 1000)
