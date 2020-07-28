@@ -288,11 +288,11 @@ body {
 
 
 #hiroshimanagazap{
-    width: 4em;
+    width: 3em;
     position: fixed;
-    top: 85%;
-    right: 3em;
-    z-index: 9999999;
+    bottom: 92%;
+    right: 1em;
+    z-index: 9999999999999999999;
 
 }
 
@@ -331,5 +331,15 @@ body {
         display: flex;
         align-items: stretch;
         justify-content: space-between;
+    }
+
+
+    #hiroshimanagazap{
+        width: 4em;
+        position: fixed;
+        top: 85%;
+        right: 3em;
+        z-index: 9999999;
+    
     }
 }
