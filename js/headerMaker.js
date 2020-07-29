@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-
+    
 
     fetch("/api/catalog_system/pub/category/tree/3/")
     .then(res =>  res.json())
@@ -9,7 +9,14 @@ $( document ).ready(function() {
       
 
         response.forEach(element => {
-            $(".deptos ul").append( `<li class="depto-${element.name}"><a href="${element.url}?O=OrderByReleaseDateDESC">${element.name}</a></li>`);
+            let divtext =  element.name;
+            element.name = element.name.replace(/[\s/,&]+/g, '-');
+            $(".deptos ul").append( `<li class="depto-${element.name}"><a href="${element.url}?O=OrderByReleaseDateDESC">${divtext}</a></li>`);
+
+            if(!element.hasChildren) {
+                $(".sidenav").append(`<div style="display:block;"><span class="depto-${element.name}"><a href="${element.url}?O=OrderByReleaseDateDESC">${divtext}</a></span></div>`);
+           
+            } 
             console.log("adding main")
             if(element.hasChildren) {
             $("#top-menu .container #deptos-list").append(`<div class="deptonav depto-${element.name}" id="${element.name}" style="display: none">
@@ -31,13 +38,13 @@ $( document ).ready(function() {
                     <ul></ul>
                  </div>
                  <div class="col-sm-3">
-                 <a><img src="/arquivos/menu_${element.name}.jpg" /></a>
+                
                  </div>
              </div>
             </div>`);
 
-            $(".sidenav").append(`<button class="dropdown-btn" id="${element.name}">${element.name}<i class="fa fa-angle-down"></i></button>
-            <div class="dropdown-container" id="${element.name}"></div>`)
+            $(".sidenav").append(`<div style="display:block;"><span class="depto-${element.name}"><a href="${element.url}?O=OrderByReleaseDateDESC">${divtext}</a></span><button class="dropdown-btn" id="${element.name}"><i class="fa fa-angle-down"></i></button></div>
+            <div class="dropdown-container" id="${element.name}"></div>`);
 
 
                 //Desktop

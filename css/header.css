@@ -180,21 +180,29 @@ body {
     overflow-x: hidden;
     padding-top: 20px;
 }
+.sidenav span {
+    display: inline-block;
+}
+.sidenav a {
+    float: initial !important;
+}
 
 /* Style the sidenav links and the dropdown button */
 
 .sidenav a, .dropdown-btn {
-    padding: 6px 8px 20px 16px;
+    padding: 15px 8px 15px 0px;
     text-decoration: none;
     font-size: 14px;
-    color: #000;
+    color: #000 !important;
     display: block;
     border: none;
     background: none;
-    width: 100%;
     text-align: left;
+    line-height: 17px;
     cursor: pointer;
     outline: none;
+    text-transform: uppercase;
+    float: right;
 }
 
 /* On mouse-over */
